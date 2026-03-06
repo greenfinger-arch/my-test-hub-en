@@ -9,65 +9,6 @@ import {
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 // 데이터 임포트
-import { flowerData } from "./data/tests/flowerData";
-import { supplementData } from "./data/tests/supplementData";
-import { deskData } from "./data/tests/deskData";
-import { interiorData } from "./data/tests/interiorData";
-import { officeData } from "./data/tests/officeData";
-import { spendingData } from "./data/tests/spendingData";
-import { blacklistData } from "./data/tests/blacklistData";
-import { sleepData } from "./data/tests/sleepData";
-import { survivalData } from "./data/tests/survivalData";
-import { soulFoodData } from "./data/tests/soulFoodData";
-import { villainData } from "./data/tests/villainData";
-import { pastLifeData } from "./data/tests/pastLifeData";
-import { interiorSoulmateData } from "./data/tests/interiorSoulmateData";
-import { dopamineData } from "./data/tests/dopamineData";
-import { moneyAnimalData } from "./data/tests/moneyAnimalData";
-import { myCafeData } from "./data/tests/myCafeData";
-import { salaryLupinData } from "./data/tests/salaryLupinData";
-import { outerInnerData } from "./data/tests/outerInnerData";
-import { fantasyJobData } from "./data/tests/fantasyJobData";
-import { letterFromFutureData } from "./data/tests/letterFromFutureData";
-import { bucketListData } from "./data/tests/bucketListData";
-import { recoveryCodeData } from "./data/tests/recoveryCodeData";
-import { blessingDayData } from "./data/tests/blessingDayData";
-import { seasonOfLoveData } from "./data/tests/seasonOfLoveData";
-import { weirdSuperpowerData } from "./data/tests/weirdSuperpowerData";
-import { reincarnatedFoodData } from "./data/tests/reincarnatedFoodData";
-import { cafeFaceData } from "./data/tests/cafeFaceData";
-import { cafeAndDessertFullSet } from "./data/tests/cafeAndDessertFullSet";
-import { personalPastelData } from "./data/tests/personalPastelData";
-import { guardianPlantData } from "./data/tests/guardianPlantData";
-import { atticRomanceData } from "./data/tests/atticRomanceData";
-import { romanceFantasyData } from "./data/tests/romanceFantasyData";
-import { loveVillainData } from "./data/tests/loveVillainData";
-import { loveTemperatureData } from "./data/tests/loveTemperatureData";
-import { zombieSurvivalData } from "./data/tests/zombieSurvivalData";
-import { pastLifeKarmaData } from "./data/tests/pastLifeKarmaData";
-import { loveMoodLightData } from "./data/tests/loveMoodLightData";
-import { desertIslandSurvivalData } from "./data/tests/desertIslandSurvivalData";
-import { loveJinSangData } from "./data/tests/loveJinSangData";
-import { marriedCouplesNightData } from "./data/tests/marriedCouplesNightData";
-import { coupleReincarnationData } from "./data/tests/coupleReincarnationData";
-import { homeHierarchyData } from "./data/tests/homeHierarchyData";
-import { firstPageMemoryData } from "./data/tests/firstPageMemoryData";
-import { futureSeasonsData } from "./data/tests/futureSeasonsData";
-import { tomorrowSeasonsData } from "./data/tests/tomorrowSeasonsData";
-import { joseonIDTest } from "./data/tests/joseonIDTest";
-import { lottoFriendshipData } from "./data/tests/lottoFriendshipData";
-import { friendVillainTest } from "./data/tests/friendVillainTest";
-import { secretHideoutData } from "./data/tests/secretHideoutData";
-import { mentalWeatherData } from "./data/tests/mentalWeatherData";
-import { dailyVitaminData } from "./data/tests/dailyVitaminData";
-import { officesurvivalData } from "./data/tests/officesurvivalData";
-import { workerDateData } from "./data/tests/workerDateData";
-import { plantMatchData } from "./data/tests/plantMatchData";
-import { deskHealthData } from "./data/tests/deskHealthData";
-import { officePlantData } from "./data/tests/officePlantData";
-import { studyDeskData } from "./data/tests/studyDeskData";
-import { studyBalanceData } from "./data/tests/studyBalanceData";
-import { spineHealthData } from "./data/tests/spineHealthData";
 import { hayFeverDataJP } from "./data/tests/hayFeverDataJP";
 
 // 1. 전역 스타일 및 애니메이션
@@ -87,65 +28,6 @@ const fadeIn = keyframes` from { opacity: 0; transform: translateY(15px); } to {
 
 // 테스트 레지스트리
 const testRegistry = {
-  office: officeData,
-  blacklist: blacklistData,
-  spending: spendingData,
-  survival: survivalData,
-  sleep: sleepData,
-  soulfood: soulFoodData,
-  interior: interiorData,
-  desk: deskData,
-  flower: flowerData,
-  supplement: supplementData,
-  villain: villainData,
-  pastLife: pastLifeData,
-  interiorSoulmate: interiorSoulmateData,
-  dopamine: dopamineData,
-  moneyAnimal: moneyAnimalData,
-  myCafe: myCafeData,
-  salaryLupin: salaryLupinData,
-  outerInner: outerInnerData,
-  fantasyJob: fantasyJobData,
-  letterFromFuture: letterFromFutureData,
-  bucketList: bucketListData,
-  recoveryCode: recoveryCodeData,
-  blessingDay: blessingDayData,
-  seasonOfLove: seasonOfLoveData,
-  weirdSuperpower: weirdSuperpowerData,
-  reincarnatedFood: reincarnatedFoodData,
-  cafeFace: cafeFaceData,
-  cafeAndDessertFullSet: cafeAndDessertFullSet,
-  personalPastel: personalPastelData,
-  guardianPlant: guardianPlantData,
-  atticRomance: atticRomanceData,
-  romanceFantasy: romanceFantasyData,
-  loveVillain: loveVillainData,
-  loveTemperature: loveTemperatureData,
-  zombieSurvival: zombieSurvivalData,
-  pastLifeKarma: pastLifeKarmaData,
-  loveMoodLight: loveMoodLightData,
-  desertIslandSurvival: desertIslandSurvivalData,
-  loveJinSang: loveJinSangData,
-  marriedCouplesNight: marriedCouplesNightData,
-  coupleReincarnation: coupleReincarnationData,
-  homeHierarchy: homeHierarchyData,
-  firstPageMemory: firstPageMemoryData,
-  futureSeasons: futureSeasonsData,
-  tomorrowSeasons: tomorrowSeasonsData,
-  joseonIDTest: joseonIDTest,
-  lottoFriendship: lottoFriendshipData,
-  friendVillainTest: friendVillainTest,
-  secretHideout: secretHideoutData,
-  mentalWeather: mentalWeatherData,
-  dailyVitamin: dailyVitaminData,
-  officesurvival: officesurvivalData,
-  workerDate: workerDateData,
-  plantMatch: plantMatchData,
-  deskHealth: deskHealthData,
-  officePlant: officePlantData,
-  studyDesk: studyDeskData,
-  studyBalance: studyBalanceData,
-  spineHealth: spineHealthData,
   hayFever: hayFeverDataJP,
 };
 
