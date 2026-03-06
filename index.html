@@ -1,44 +1,45 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <title>ココロ雑貨店 | あなたにぴったりのライフスタイル診断</title>
-  <meta name="description" content="ココロ雑貨店へようこそ。花、観葉植物、健康ケアなど、あなたの心と暮らしにぴったりのアイテムを見つけるパーソナル診断シリーズです。" />
-  <meta name="keywords" content="診断, 心理テスト, 性格診断, ライフスタイル, 雑貨, プレゼント選び, ココロ雑貨店" />
-  <meta name="author" content="ZakkaRank Japan" />
+  <title>ZakkaRank Lab | Data-Driven Lifestyle Insights</title>
+  <meta name="description"
+    content="Discover your personalized lifestyle solutions at ZakkaRank Lab. From sleep optimization for HSPs to seasonal wellness, find what truly fits your mind and home." />
+  <meta name="keywords"
+    content="personality quiz, lifestyle assessment, HSP sleep solutions, wellness diagnostic, curated recommendations, ZakkaRank" />
+  <meta name="author" content="HomeBySeasonHub" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="ココロ雑貨店 - 心に寄り添う診断シリーズ" />
-  <meta property="og:description" content="30秒で見つかる、あなたの「本当の答え」。今すぐ診断してみませんか？" />
+  <meta property="og:title" content="ZakkaRank Lab - Personalized Solutions for Your Soul" />
+  <meta property="og:description"
+    content="Take our 30-second assessment and unlock a lifestyle ritual tailored just for you." />
   <meta property="og:image" content="/og-image.png" />
-  <meta property="og:url" content="https://quiz.zakkarank.com" />
+  <meta property="og:url" content="https://lab.homebyseasonhub.com" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ココロ雑貨店 | 診断シリーズ" />
-  <meta name="twitter:description" content="あなたにぴったりのアイテムを提案する、新感覚の診断サイトです。" />
+  <meta name="twitter:title" content="ZakkaRank Lab | Insights & Curation" />
+  <meta name="twitter:description" content="Scientific & Intuitive assessments for a better living experience." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* 일본어 웹 타이포그래피 설정 
-       1. Noto Sans JP: 가장 범용적이고 세련된 고딕체
-       2. -apple-system 등을 통해 각 기기별 기본 폰트 우선 로드
-    */
+    /* Global Standard Typography */
     body {
-      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-      background-color: #fcfcfc;
-      /* 약간 더 부드러운 흰색으로 눈의 피로 감소 */
+      /* Inter is the gold standard for modern SaaS & Lab interfaces */
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
       margin: 0;
-      color: #333;
-      line-height: 1.6;
-      letter-spacing: 0.03em;
-      /* 일본어는 자간이 조금 있는 것이 가독성이 좋습니다 */
+      color: #111827;
+      /* Near-black for high contrast */
+      line-height: 1.5;
+      letter-spacing: -0.011em;
+      /* Inter looks best with a slightly tight tracking */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -48,16 +49,22 @@
       min-height: 100vh;
     }
 
-    /* 모바일에서 텍스트 선택 시 하이라이트 색상 (선택사항) */
+    /* Modern selection style */
     ::selection {
-      background: #e2f0ff;
-      color: #007AFF;
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    /* Accessibility: Ensure focus states are visible for keyboard users */
+    :focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
     }
   </style>
 </head>
 
 <body>
-  <noscript>このアプリを実行するには JavaScript を有効にする必要があります。</noscript>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

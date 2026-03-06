@@ -10,6 +10,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 // 데이터 임포트
 import { hayFeverDataJP } from "./data/tests/hayFeverDataJP";
+import { homeBiohackDataEn } from "./data/tests/homeBiohackDataEn";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -29,6 +30,7 @@ const fadeIn = keyframes` from { opacity: 0; transform: translateY(15px); } to {
 // 테스트 레지스트리
 const testRegistry = {
   hayFever: hayFeverDataJP,
+  homeBiohackEn: homeBiohackDataEn,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
@@ -36,17 +38,17 @@ const activeTestKeys = Object.keys(testRegistry).filter(
   (key) => testRegistry[key].isReady === true,
 );
 
-// 2. 메인 갤러리 (일본어 현지화)
+// 2. Main Gallery (English Version)
 const MainGallery = () => {
   const navigate = useNavigate();
 
   return (
     <MainContainer>
       <header style={{ textAlign: "center", marginBottom: "50px" }}>
-        <Badge>Interactive Test Lab</Badge>
-        <MainTitle>ココロ雑貨店</MainTitle>
+        <Badge>Insight & Solution Lab</Badge>
+        <MainTitle>ZakkaRank Lab</MainTitle>
         <SubTitle>
-          あなたの心に必要な「気づき」が見つかる場所。
+          Finding the perfect balance for your home and mind through curated data.
         </SubTitle>
       </header>
 
@@ -67,12 +69,12 @@ const MainGallery = () => {
           </TestCard>
         ))}
       </Grid>
-      <Footer>© 2026 Ranklamp Play Japan. All rights reserved.</Footer>
+      <Footer>© 2026 HomeBySeasonHub Lab. All rights reserved.</Footer>
     </MainContainer>
   );
 };
 
-// 3. 페이지 로더 (기존 로직 유지)
+// 3. Page Loader (Logic remains the same)
 const AutoTestLoader = () => {
   const path = window.location.pathname.replace(/^\/|\/$/g, "");
   if (!path) return <MainGallery />;
@@ -86,7 +88,7 @@ const AutoTestLoader = () => {
   return <TestManager data={data} />;
 };
 
-// 4. 테스트 엔진 (일본어 현지화)
+// 4. Test Engine (Global Localization)
 const TestManager = ({ data }) => {
   const navigate = useNavigate();
   const [step, setStep] = useState(0);
@@ -99,7 +101,8 @@ const TestManager = ({ data }) => {
       setCurrentIdx(currentIdx + 1);
     } else {
       setStep(2);
-      setTimeout(() => setStep(3), 1800); // 일본 사용자는 분석 연출을 조금 더 즐기는 경향이 있어 1.8초로 약간 조정
+      // Global users prefer a balance between "Fast" and "Reliable"
+      setTimeout(() => setStep(3), 1500); 
     }
   };
 
@@ -111,7 +114,7 @@ const TestManager = ({ data }) => {
   };
 
   const handleShare = async () => {
-    const resultText = `私の結果は【${getResult().name}】でした！\n#ランクラムプ診断 #性格診断`;
+    const resultText = `I found my match: 【${getResult().name}】! Discover yours at ZakkaRank Lab.`;
     const shareData = {
       title: data.title,
       text: resultText,
@@ -123,7 +126,7 @@ const TestManager = ({ data }) => {
         await navigator.clipboard.writeText(
           `${resultText}\n${window.location.href}`,
         );
-        alert("リンクをコピーしました！SNSに貼り付けてシェアしてね✨");
+        alert("Link copied to clipboard! Share it with your friends ✨");
       }
     } catch (err) {
       console.log(err);
@@ -137,13 +140,13 @@ const TestManager = ({ data }) => {
       <Card>
         {step === 0 && (
           <FadeContainer>
-            <Badge>Personal Curation</Badge>
+            <Badge>Personal Assessment</Badge>
             <Title>{data.title}</Title>
             <SubTitle style={{ marginBottom: "20px" }}>
               {data.subTitle}
             </SubTitle>
             {data.mainImg && <MainBanner src={data.mainImg} alt="main" />}
-            <MainButton onClick={() => setStep(1)}>診断を始める</MainButton>
+            <MainButton onClick={() => setStep(1)}>Start Assessment</MainButton>
           </FadeContainer>
         )}
 
@@ -154,7 +157,7 @@ const TestManager = ({ data }) => {
                 $width={(currentIdx / data.questions.length) * 100}
               />
             </ProgressOuter>
-            <QuestionNum>Q {currentIdx + 1}</QuestionNum>
+            <QuestionNum>Question {currentIdx + 1}</QuestionNum>
             {data.questions[currentIdx].img && (
               <ContentImage src={data.questions[currentIdx].img} alt="q" />
             )}
@@ -173,16 +176,16 @@ const TestManager = ({ data }) => {
           <LoadingWrapper>
             <Spinner />
             <LoadingText>
-              結果を分析中です...
+              Analyzing your data...
               <br />
-              少々お待ちください
+              Finding your perfect match.
             </LoadingText>
           </LoadingWrapper>
         )}
 
         {step === 3 && result && (
           <FadeContainer>
-            <Badge>あなたにぴったりの結果</Badge>
+            <Badge>Your Best Match</Badge>
             <ResultName>{result.name}</ResultName>
             <ContentImage
               src={result.img}
@@ -191,31 +194,31 @@ const TestManager = ({ data }) => {
             />
             <ResultDesc>{result.desc}</ResultDesc>
 
-            {/* 제휴 버튼 */}
+            {/* Affiliate CTA */}
             <AffiliateButton
               onClick={() => window.open(result.affiliateLink, "_blank")}
             >
               {result.ctaText}
             </AffiliateButton>
 
-            {/* 일본 법적 공지 문구 (스티어링 규제 대응) */}
+            {/* Global Affiliate Disclosure (Crucial for Trust) */}
             <p
               style={{
                 fontSize: "11px",
-                color: "#aaa",
+                color: "#888",
                 marginTop: "10px",
                 marginBottom: "10px",
                 textAlign: "center",
                 lineHeight: "1.4",
+                padding: "0 10px"
               }}
             >
-              ※ 本ページ는
-              Amazonアソシエイト等のアフィリエイトプログラムに参加しており、適格販売により収入を得る場合があります。
+              ※ As an Amazon Associate, we may earn a small commission from qualifying purchases at no extra cost to you.
             </p>
 
-            <ShareButton onClick={handleShare}>結果をシェアする</ShareButton>
+            <ShareButton onClick={handleShare}>Share My Result</ShareButton>
 
-            {/* [신규 추가] 메인 블로그 기사 연결 버튼 */}
+            {/* Link to Blog Article */}
             {data.relatedPostUrl && (
               <div style={{ marginTop: "12px", textAlign: "center" }}>
                 <button
@@ -231,7 +234,7 @@ const TestManager = ({ data }) => {
                     padding: "5px 10px",
                   }}
                 >
-                  📖 専門家のアドバイスを読む →
+                  📖 Read Expert Guide →
                 </button>
               </div>
             )}
@@ -244,13 +247,13 @@ const TestManager = ({ data }) => {
                   setScore({});
                 }}
               >
-                もう一度診断する
+                Retake Quiz
               </TextActionButton>
 
               <Divider>|</Divider>
 
               <TextActionButton onClick={() => navigate("/")}>
-                他の診断を見る →
+                View More Quizzes →
               </TextActionButton>
             </ActionGroup>
           </FadeContainer>
