@@ -30,7 +30,7 @@ const fadeIn = keyframes` from { opacity: 0; transform: translateY(15px); } to {
 // 테스트 레지스트리
 const testRegistry = {
   hayFever: hayFeverDataJP,
-  homeBiohack: homeBiohacn,
+  homeBiohack: homeBiohack,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
