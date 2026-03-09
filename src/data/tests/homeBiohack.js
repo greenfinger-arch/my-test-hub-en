@@ -1,4 +1,4 @@
-export const homeBiohackEn = {
+export const homeBiohack = {
   id: "home-biohack",
   title: "The Ultimate Home Biohack Assessment",
   subTitle: "Is your living environment draining your longevity? Identify your primary environmental stressor and optimize your biological potential.",
