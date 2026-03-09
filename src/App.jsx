@@ -9,7 +9,6 @@ import {
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 // 데이터 임포트
-import { hayFeverDataJP } from "./data/tests/hayFeverDataJP";
 import { homeBiohack } from "./data/tests/homeBiohack";
 
 // 1. 전역 스타일 및 애니메이션
@@ -29,7 +28,6 @@ const fadeIn = keyframes` from { opacity: 0; transform: translateY(15px); } to {
 
 // 테스트 레지스트리
 const testRegistry = {
-  hayFever: hayFeverDataJP,
   homeBiohack: homeBiohack,
 };
 
