@@ -79,7 +79,7 @@ export const homeBiohack = {
       img: "/images/homeBiohack04.jpg",
       desc: "You are highly sensitive to the invisible 'Electrosmog' and a lack of Earth connection. Your bio-electric field needs 'Grounding'. Reconnecting with the Earth's frequency will help reset your cellular energy production.",
       ctaText: "View Top-Rated Grounding Mats",
-      affiliateLink: "https://www.amazon.com/s?k=earthing+grounding+mat+for+bed"
+      affiliateLink: "https://www.amazon.com/AmazonBasics-Cooling-Gel-Infused-CertiPUR-US-Certified/dp/B07SLNF1F2/ref=sr_1_1_ffob_sspa?crid=1XIKZ10VI1YME&dib=eyJ2IjoiMSJ9.lacvXq1FdEBIGFEtJMDD8LIlQTWjh8QjzFwDHvHENwJmvaJ1TJuIF5ZJtv0iuQZgkBvDoxeAMv_nN403qITnFIzW8xHuXr22o3KUKWAJITlF9MoWeRvV5EDbd0ZDqQo4XfBfFwpdUErtI8IMV-H3SyGnUKBA9pnAcwMud3fjm6U68V25-FnzaH7HQHeYMnafuETnyostATcGV_Bl6HEfLogFZkZ3V7kOFf85HH3LpFeBAv5bdRYteR7o1XS-4V4EGQd336xZoqMGZgFp-gPPtr5LhnH083X1hlIKPBQUrSo.839fBR4dSqxkjtMadbtHHH9vUiP286bZmMag60f9CN0&dib_tag=se&keywords=cooling%2Bmattress%2Btoppers&qid=1773038268&sprefix=cooling%2Bmattress%2Btoppers%2Caps%2C334&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
     }
   }
 };
