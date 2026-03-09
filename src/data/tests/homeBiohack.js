@@ -2,8 +2,9 @@ export const homeBiohack = {
   id: "home-biohack",
   title: "The Ultimate Home Biohack Assessment",
   subTitle: "Is your living environment draining your longevity? Identify your primary environmental stressor and optimize your biological potential.",
+  relatedPostUrl: "https://homebyseasonhub.com/5-hidden-biohacks-to-turn-your-home-into-a-longevity-hub", 
   isReady: true,
-  mainImg: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800",
+  mainImg: "/images/homeBiohack-main.jpg",
   questions: [
     {
       q: "How does your energy level typically shift around 3:00 PM?",
@@ -54,28 +55,28 @@ export const homeBiohack = {
   results: {
     LIGHT: {
       name: "The Circadian Warrior",
-      img: "https://images.unsplash.com/photo-1507598641400-ec3536ba81bc?w=600",
+      img: "/images/homeBiohack01.jpg",
       desc: "Your primary bio-stresser is 'Junk Light'. Artificial blue light is disrupting your mitochondria and cortisol levels. By optimizing your light-dark cycle, you'll unlock unprecedented cognitive clarity and deeper REM sleep.",
       ctaText: "Shop Bio-Hack Lighting Solutions",
-      affiliateLink: "https://www.amazon.com/s?k=circadian+lighting+blue+light+blocking"
+      affiliateLink: "https://www.amazon.com/Happy-Light-Therapy-Sun-Lamp/dp/B01IU9MMPI/ref=sr_1_7_sspa?crid=2CGUZ7DAC209U&dib=eyJ2IjoiMSJ9.WwJ_8PkZ4ok-0pr0GDl3soDfkoyYOUHdEi46SUMeUrRsl9y-r9cxkvc01EPml8n69v3NhsruibRx1C3wFG1MoMpYxIN7cd0Mrb8Z6FzlKtw.Dn8hykqN02kWiP_QWJ9j35054uVXS-Dhpuctmi9Dvoo&dib_tag=se&keywords=Circadian%2BLighting%3A%2BBeyond%2Bthe%2BLight%2BBulb&qid=1773036328&sprefix=circadian%2Blighting%2Bbeyond%2Bthe%2Blight%2Bbulb%2Caps%2C401&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1"
     },
     AIR: {
       name: "The Pristine Breather",
-      img: "https://images.unsplash.com/photo-1516550130565-3e28c8959663?w=600",
+      img: "/images/homeBiohack02.jpg",
       desc: "Your biology is highly sensitive to VOCs and micro-particulates. 'Stale air' is the silent thief of your longevity. Implementing a multi-stage air purification strategy will revitalize your skin and immune system.",
       ctaText: "Explore Medical-Grade Air Purifiers",
-      affiliateLink: "https://www.amazon.com/s?k=HEPA+H13+air+purifier+longevity"
+      affiliateLink: "https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_3?crid=2I81SHROALYH0&dib=eyJ2IjoiMSJ9.kbKQm37brB-wH_mgF34UHd8HFkshWkZH76hfpW1g11eRlDZb1TbTh7ARULkyS_S-YVkQx8R0j4FyEy-d0ylwltiDk_aJJWK3ebdScgvnfbuPC04YEU39J1vIXUJssvOu-SULoHHXNXfRrGTk1_xMRQAlESZgd7ehn8a2w9W5cBDdFGPhrFEw8hsQNwvMDhuivb7gDDY-NuMRjW5vYHRaDA0-xTulJExw72rQIZTPWyI.Yurn_VLOxH0n6dSsRmliRNdyxvadX112k5XcSyN2O4E&dib_tag=se&keywords=Air%2BPurity&qid=1773037696&sprefix=air%2Bpurity%2Caps%2C351&sr=8-3&th=1"
     },
     SENSORY: {
       name: "The Sensory Minimalist",
-      img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600",
+      img: "/images/homeBiohack03.jpg",
       desc: "Your nervous system is a high-precision instrument that is currently over-stimulated. Subtle noises and visual clutter are keeping your body in a 'fight or flight' state. You need sensory grounding to lower systemic inflammation.",
       ctaText: "Discover Sensory Grounding Tools",
-      affiliateLink: "https://www.amazon.com/s?k=white+noise+machine+weighted+blanket"
+      affiliateLink: "https://www.amazon.com/Pushpeel-Sensory-Activity-Board-Silicone/dp/B0CRXCSLTX/ref=sxin_17_pa_sp_search_thematic_sspa?content-id=amzn1.sym.157815aa-47d5-4a63-b37d-108738de1fd0%3Aamzn1.sym.157815aa-47d5-4a63-b37d-108738de1fd0&crid=33LVE3LZWNMJF&cv_ct_cx=Sensory%2BGrounding&keywords=Sensory%2BGrounding&pd_rd_i=B0CRXCSLTX&pd_rd_r=d7368e99-a562-49f1-ae94-649b7cc476af&pd_rd_w=nEIyy&pd_rd_wg=u6Arb&pf_rd_p=157815aa-47d5-4a63-b37d-108738de1fd0&pf_rd_r=A2KWJ3P73YCKTB0A0AQ1&qid=1773037819&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=sensory%2Bgrounding%2Caps%2C409&sr=1-3-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&aref=d15Ydq8vpg&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1"
     },
     BIO_E: {
       name: "The Bio-Electric Explorer",
-      img: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600",
+      img: "/images/homeBiohack04.jpg",
       desc: "You are highly sensitive to the invisible 'Electrosmog' and a lack of Earth connection. Your bio-electric field needs 'Grounding'. Reconnecting with the Earth's frequency will help reset your cellular energy production.",
       ctaText: "View Top-Rated Grounding Mats",
       affiliateLink: "https://www.amazon.com/s?k=earthing+grounding+mat+for+bed"
