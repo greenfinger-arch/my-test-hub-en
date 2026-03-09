@@ -44,7 +44,7 @@ const MainGallery = () => {
     <MainContainer>
       <header style={{ textAlign: "center", marginBottom: "50px" }}>
         <Badge>Insight & Solution Lab</Badge>
-        <MainTitle>ZakkaRank Lab</MainTitle>
+        <MainTitle>HomeBySeasonHub Lab</MainTitle>
         <SubTitle>
           Finding the perfect balance for your home and mind through curated data.
         </SubTitle>
