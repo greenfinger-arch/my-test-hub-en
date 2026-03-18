@@ -10,6 +10,7 @@ import styled, { createGlobalStyle, keyframes } from "styled-components";
 
 // 데이터 임포트
 import { homeBiohack } from "./data/tests/homeBiohack";
+import { OfficeBioData } from "./data/tests/OfficeBioData.js";
 
 // 1. 전역 스타일 및 애니메이션
 const GlobalStyle = createGlobalStyle`
@@ -29,6 +30,7 @@ const fadeIn = keyframes` from { opacity: 0; transform: translateY(15px); } to {
 // 테스트 레지스트리
 const testRegistry = {
   homeBiohack: homeBiohack,
+  OfficeBio: OfficeBioData,
 };
 
 // [삽입 코드 1] 공개 가능한 테스트 키값만 추출 (isReady가 true인 것만)
